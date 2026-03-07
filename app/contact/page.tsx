@@ -98,7 +98,7 @@ export default function ContactPage() {
           >
             <div className="w-full h-full rounded-2xl overflow-hidden relative transition-all duration-1000">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.2858343729904!2d83.89679231494056!3d21.496531985746766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a213da47cf29f55%3A0xe5a1dddfd212dd07!2sKratu%20Hall%20Of%20Residence!5e0!3m2!1sen!2sin!4v1689230000000!5m2!1sen!2sin"
+                src="https://maps.app.goo.gl/HVnrdTecFhzme1FVA"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
