@@ -5,21 +5,21 @@ import Image from "next/image";
 import PageTransition from "../components/PageTransition";
 
 const secretaries = [
-  { role: "General Secretary", name: "Pratyush Kumar Nayak", branch: "Civil, 3rd Yr", phone: "7077656360", img: "/student-council-images/pratyush-kumar-nayak-general-secretary.png", bg: "from-amber-600/20" },
-    { role: "Mess Secretary", name: "Ashutosh Gouda", branch: "Civil, 3rd Yr", phone: "6370163353", img: "", bg: "from-orange-600/20", ph: true },
-  { role: "Maintenance Secretary", name: "Samuel Priyatam", branch: "CSE, 3rd Yr", phone: "7653896570", img: "/student-council-images/samuel-priyatam-maintenance-secretary.jpg", bg: "from-blue-600/20" },  
-  { role: "Sports Secretary", name: "Gobinda Behera", branch: "Mech, 3rd Yr", phone: "7848805791", img: "/student-council-images/gobinda-behera-sports-secretary.png", bg: "from-red-600/20" },
-  { role: "Health & Hygiene Secretary", name: "Balaji Kumar Sahu", branch: "Mech, 3rd Yr", phone: "7077431215", img: "/student-council-images/balaji-kumar-sahu-health-secretary.png", bg: "from-emerald-600/20" },
-  { role: "Cultural Secretary", name: "Srinibas Das", branch: "CSE, 3rd Yr", phone: "8144214486", img: "", bg: "from-purple-600/20", ph: true },
+  { role: "General Secretary", name: "Pratyush Kumar Nayak", branch: "Civil, 3rd Yr", phone: "7008974697", img: "/student-council-images/pratyush-kumar-nayak-general-secretary.png", bg: "from-amber-600/20" },
+    { role: "Mess Secretary", name: "Ashutosh Gouda", branch: "Civil, 3rd Yr", phone: "8456949047", img: "", bg: "from-orange-600/20", ph: true },
+  { role: "Maintenance Secretary", name: "Samuel Priyatam", branch: "CSE, 3rd Yr", phone: "9337903728", img: "/student-council-images/samuel-priyatam-maintenance-secretary.jpg", bg: "from-blue-600/20" },  
+  { role: "Sports Secretary", name: "Gobinda Behera", branch: "Mech, 3rd Yr", phone: "9178596118", img: "/student-council-images/gobinda-behera-sports-secretary.png", bg: "from-red-600/20" },
+  { role: "Health & Hygiene Secretary", name: "Balaji Kumar Sahu", branch: "Mech, 3rd Yr", phone: "6370601509", img: "/student-council-images/balaji-kumar-sahu-health-secretary.png", bg: "from-emerald-600/20" },
+  { role: "Cultural Secretary", name: "Srinibas Das", branch: "CSE, 3rd Yr", phone: "7846997262", img: "", bg: "from-purple-600/20", ph: true },
 ];
 
 const councilors = [
-  { role: "Councilor", wing: "B.Tech/West Wing", name: "Abhijit Rath", branch: "CSE, 2nd Yr", phone: "8249870125", ph: true },
-  { role: "Councilor", wing: "East Wing", name: "Sangram Keshari Choudhury", branch: "Mech, 3rd Yr", phone: "7894236353", ph: true },
-  { role: "Councilor", wing: "First Floor West Wing", name: "Debiprasad Sahoo", branch: "Mech, 3rd Yr", phone: "8249870125", img: "/student-council-images/debiprasad-sahoo-councilor.png" },
+  { role: "Councilor", wing: "Ground floor West Wing", name: "Abhijit Rath", branch: "CSE, 3rd Yr", phone: "8249870125", ph: true },
+  { role: "Councilor", wing: "Ground floor West Wing", name: "Debiprasad Sahoo", branch: "Mech, 3rd Yr", phone: "8249870125", img: "/student-council-images/debiprasad-sahoo-councilor.png" },
+  { role: "Councilor", wing: "First floor East Wing", name: "Sangram Keshari Choudhury", branch: "Mech, 3rd Yr", phone: "7894236353", ph: true },
   { role: "Councilor", wing: "First Floor East Wing", name: "Shreyas Dash", branch: "Civil, 3rd Yr", phone: "9439617267", img: "/student-council-images/shreyas-dash-councilor.png" },
   { role: "Councilor", wing: "Second Floor West Wing", name: "Mrutyunjay Sahoo", branch: "Mech, 3rd Yr", phone: "7815049386", ph: true },
-  { role: "Councilor", wing: "Second Floor East Wing", name: "Suvam Dora", branch: "CCivil, 3rd Yr", phone: "9348123610", ph: true },
+  { role: "Councilor", wing: "Second Floor East Wing", name: "Suvam Dora", branch: "Civil, 3rd Yr", phone: "9348123610", ph: true },
 ];
 
 export default function StudentCouncilPage() {
