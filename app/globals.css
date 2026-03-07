@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold-50: #FFF8DC;
-  --color-gold-100: #FFF3C4;
-  --color-gold-200: #FFE88A;
-  --color-gold-300: #FFD700;
-  --color-gold-400: #F5C518;
-  --color-gold-500: #E6B000;
-  --color-gold-600: #CC9900;
+  --color-gold-50: #ffffff;
+  --color-gold-100: #fffffc;
+  --color-gold-200: #fffff0;
+  --color-gold-300: #ffffe0;
+  --color-gold-400: #fcf6ba;
+  --color-gold-500: #fceea7;
+  --color-gold-600: #fcd955;
   --color-dark-950: #050505;
   --color-dark-900: #0A0A0A;
   --color-dark-800: #141414;
@@ -48,7 +48,7 @@ body {
   background: var(--color-dark-950);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(245, 197, 24, 0.3);
+  background: rgba(252, 246, 186, 0.3);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -93,8 +93,8 @@ body {
 }
 
 .glass-card:hover {
-  border-color: rgba(245, 197, 24, 0.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 40px rgba(245, 197, 24, 0.1);
+  border-color: rgba(252, 246, 186, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 40px rgba(252, 246, 186, 0.1);
   transform: translateY(-8px) scale(1.02);
 }
 
@@ -108,7 +108,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 0 0 40px rgba(245, 197, 24, 0.3);
+  text-shadow: 0 0 40px rgba(252, 246, 186, 0.3);
 }
 
 .gradient-text-subtle {
@@ -120,11 +120,11 @@ body {
 
 /* ===== GLOW EFFECTS ===== */
 .gold-glow {
-  box-shadow: 0 0 30px rgba(245, 197, 24, 0.15);
+  box-shadow: 0 0 30px rgba(252, 246, 186, 0.15);
 }
 
 .gold-glow:hover {
-  box-shadow: 0 0 60px rgba(245, 197, 24, 0.3);
+  box-shadow: 0 0 60px rgba(252, 246, 186, 0.3);
 }
 
 /* ===== SECTION MARGINS ===== */
@@ -198,8 +198,8 @@ body {
 }
 
 .map-container:hover {
-  border-color: rgba(245, 197, 24, 0.4);
-  box-shadow: 0 0 50px rgba(245, 197, 24, 0.15);
+  border-color: rgba(252, 246, 186, 0.4);
+  box-shadow: 0 0 50px rgba(252, 246, 186, 0.15);
 }
 
 .map-container iframe {

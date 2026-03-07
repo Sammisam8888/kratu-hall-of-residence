@@ -35,19 +35,19 @@ function Particles() {
 
   const colors = useMemo(() => {
     const col = new Float32Array(count * 3);
-    const goldColors = [
+    const lightYellowColors = [
       [0.96, 0.77, 0.09], // F5C518
       [1.0, 0.84, 0.0],
       [1.0, 0.95, 0.78],
     ];
     for (let i = 0; i < count; i++) {
-      const c = goldColors[Math.floor(Math.random() * goldColors.length)];
+      const c = lightYellowColors[Math.floor(Math.random() * lightYellowColors.length)];
       col[i * 3] = c[0];
       col[i * 3 + 1] = c[1];
       col[i * 3 + 2] = c[2];
     }
     return col;
-  }, []);
+  }, [count]);
 
   // For connecting lines
   const maxLines = count * 4;

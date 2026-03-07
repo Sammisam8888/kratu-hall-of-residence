@@ -22,14 +22,14 @@ export default function FacilitiesPage() {
       <div ref={containerRef} className="pb-32 overflow-hidden">
         {/* ===== HERO ===== */}
         <section className="relative min-h-[60vh] flex flex-col items-center justify-center pt-32 px-4 text-center">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-400/5 rounded-[100%] blur-[120px] -z-10 pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-100/5 rounded-[100%] blur-[120px] -z-10 pointer-events-none" />
           
           <motion.div style={{ y }} className="z-10 w-full max-w-5xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="inline-block mb-6 px-6 py-2 rounded-full border border-gold-400/30 bg-gold-400/10 text-gold-400 text-sm font-semibold tracking-widest uppercase"
+              className="inline-block mb-6 px-6 py-2 rounded-full border border-yellow-100/30 bg-yellow-100/10 text-yellow-100 text-sm font-semibold tracking-widest uppercase"
             >
               Beyond the Classroom
             </motion.div>
@@ -38,7 +38,7 @@ export default function FacilitiesPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl md:text-8xl lg:text-[9vw] font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-gold-400/30 mb-8 leading-none"
+              className="text-6xl md:text-8xl lg:text-[9vw] font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-yellow-100/30 mb-8 leading-none"
             >
               Living in <span className="italic font-serif">Kratu</span>
             </motion.h1>
@@ -102,24 +102,24 @@ export default function FacilitiesPage() {
               
               <div className="space-y-4">
                  <div className="flex items-center gap-4 text-white/70">
-                   <div className="w-10 h-10 rounded-full bg-gold-400/10 flex items-center justify-center border border-gold-400/20 font-serif text-gold-400 italic">I</div>
+                   <div className="w-10 h-10 rounded-full bg-yellow-100/10 flex items-center justify-center border border-yellow-100/20 font-serif text-yellow-100 italic">I</div>
                    <span className="text-lg">4 Nutritious Meals Daily</span>
                  </div>
                  <div className="flex items-center gap-4 text-white/70">
-                   <div className="w-10 h-10 rounded-full bg-gold-400/10 flex items-center justify-center border border-gold-400/20 font-serif text-gold-400 italic">II</div>
+                   <div className="w-10 h-10 rounded-full bg-yellow-100/10 flex items-center justify-center border border-yellow-100/20 font-serif text-yellow-100 italic">II</div>
                    <span className="text-lg">Legendary Night Canteen</span>
                  </div>
                  <div className="flex items-center gap-4 text-white/70">
-                   <div className="w-10 h-10 rounded-full bg-gold-400/10 flex items-center justify-center border border-gold-400/20 font-serif text-gold-400 italic">III</div>
+                   <div className="w-10 h-10 rounded-full bg-yellow-100/10 flex items-center justify-center border border-yellow-100/20 font-serif text-yellow-100 italic">III</div>
                    <span className="text-lg">Monthly Grand Feasts</span>
                  </div>
               </div>
             </div>
             
             <div className="lg:w-1/2 bg-dark-900/50 p-10 md:p-16 relative min-h-[400px] flex items-center justify-center overflow-hidden">
-              <div className="text-[200px] opacity-5 absolute font-serif text-gold-400 pointer-events-none select-none -right-10 -bottom-10">M</div>
+              <div className="text-[200px] opacity-5 absolute font-serif text-yellow-100 pointer-events-none select-none -right-10 -bottom-10">M</div>
               <div className="relative z-10 w-full">
-                <h3 className="text-gold-400 uppercase tracking-widest font-bold text-sm mb-6 border-b border-white/10 pb-4">Hall Capacity Stats</h3>
+                <h3 className="text-yellow-100 uppercase tracking-widest font-bold text-sm mb-6 border-b border-white/10 pb-4">Hall Capacity Stats</h3>
                 <div className="grid grid-cols-2 gap-8">
                   <div>
                     <div className="text-5xl font-black text-white mb-2">254</div>

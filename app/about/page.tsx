@@ -14,10 +14,10 @@ export default function AboutPage() {
   const headerOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   const loreItems = [
-    { label: "01", title: "Cosmic Inspiration", description: "Part of the legendary Ursa Major constellation naming tradition.", className: "gold-glow border-gold-400/20", marginTop: "" },
+    { label: "01", title: "Cosmic Inspiration", description: "Part of the legendary Ursa Major constellation naming tradition.", className: "yellow-100-glow border-yellow-100/20", marginTop: "" },
     { label: "02", title: "Since 1956", description: "Decades of producing top-tier engineers and leaders.", className: "border-white/5", marginTop: "mt-8" },
     { label: "03", title: "254 Strong", description: "A tight-knit community of brilliant minds from across the state.", className: "border-white/5", marginTop: "" },
-    { label: "04", title: "VSSUT Proud", description: "Integral part of Odisha's premier technical institution.", className: "gold-glow border-gold-400/20", marginTop: "mt-8" }
+    { label: "04", title: "VSSUT Proud", description: "Integral part of Odisha's premier technical institution.", className: "yellow-100-glow border-yellow-100/20", marginTop: "mt-8" }
   ];
 
   return (
@@ -25,14 +25,14 @@ export default function AboutPage() {
       <div ref={containerRef} className="pb-32">
         {/* ===== MASSIVE HEADER ===== */}
         <section className="relative min-h-[60vh] md:min-h-[80vh] flex flex-col items-center justify-center pt-32 px-4 overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-400/10 rounded-full blur-[100px] -z-10" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-100/10 rounded-full blur-[100px] -z-10" />
           
           <motion.div style={{ y: headerY, opacity: headerOpacity }} className="text-center z-10 w-full max-w-5xl">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="inline-block mb-6 px-6 py-2 rounded-full border border-gold-400/30 bg-gold-400/10 backdrop-blur-md text-gold-400 text-sm font-semibold tracking-widest uppercase"
+              className="inline-block mb-6 px-6 py-2 rounded-full border border-yellow-100/30 bg-yellow-100/10 backdrop-blur-md text-yellow-100 text-sm font-semibold tracking-widest uppercase"
             >
               Our History
             </motion.div>
@@ -44,7 +44,7 @@ export default function AboutPage() {
               className="text-6xl md:text-8xl lg:text-[9vw] font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40 mb-8 leading-none drop-shadow-2xl"
             >
               A Legacy of <br />
-              <span className="text-gold-400 italic font-serif pointer-events-none">Excellence</span>
+              <span className="text-yellow-100 italic font-serif pointer-events-none">Excellence</span>
             </motion.h1>
             
             <motion.p
@@ -78,7 +78,7 @@ export default function AboutPage() {
 
         {/* ===== TIMELINE ===== */}
         <section className="max-w-4xl mx-auto px-4 relative">
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-gold-400/30 to-transparent" />
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-yellow-100/30 to-transparent" />
           
           {[
             {
@@ -105,14 +105,21 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               className={`relative flex items-center mb-24 md:mb-32 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
             >
-              <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gold-400 shadow-[0_0_20px_rgba(245,197,24,1)] z-10" />
+              {/* Timeline Dot */}
+              <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-yellow-100 shadow-[0_0_20px_rgba(252,246,186,0.6)] z-20 border-2 border-dark-950" />
               
-              <div className={`ml-20 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-20 md:text-right' : 'md:pl-20 md:text-left'}`}>
-                <div className="text-gold-400 font-black text-6xl md:text-8xl mb-2 opacity-30 select-none">
+              {/* Empty Space for Grid Alignment */}
+              <div className="hidden md:block w-[45%]" />
+              
+              {/* Content Box */}
+              <div className={`ml-20 md:ml-0 md:w-[45%] flex flex-col ${index % 2 === 0 ? 'md:items-start md:text-left' : 'md:items-end md:text-right'}`}>
+                <div className={`text-yellow-100 font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter mb-0 opacity-20 select-none leading-none ${index % 2 === 0 ? 'md:-ml-4' : 'md:-mr-4'}`}>
                   {item.year}
                 </div>
-                <h3 className="text-3xl font-bold text-white mb-4">{item.title}</h3>
-                <p className="text-white/50 text-lg leading-relaxed">{item.desc}</p>
+                <div className={`relative z-10 -mt-6 ${index % 2 === 0 ? 'md:ml-4' : 'md:mr-4'}`}>
+                  <h3 className="text-3xl font-bold text-white mb-4">{item.title}</h3>
+                  <p className="text-white/50 text-lg leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             </motion.div>
           ))}

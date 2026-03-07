@@ -52,12 +52,12 @@ export default function Home() {
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
               className="mb-8"
             >
-              <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-gold-400/30 bg-gold-400/5 backdrop-blur-md">
-                <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
-                <span className="text-gold-400 text-xs md:text-sm font-semibold tracking-[0.3em] uppercase">
+              <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-yellow-100/30 bg-yellow-100/5 backdrop-blur-md">
+                <span className="w-2 h-2 rounded-full bg-yellow-100 animate-pulse" />
+                <span className="text-yellow-100 text-xs md:text-sm font-semibold tracking-[0.3em] uppercase">
                   VSSUT Burla • Est. 1956
                 </span>
-                <span className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-yellow-100 animate-pulse" />
               </div>
             </motion.div>
 
@@ -67,11 +67,11 @@ export default function Home() {
               transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-[12vw] md:text-[8vw] lg:text-[7vw] font-black leading-[0.85] tracking-tighter mb-6 relative"
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-br from-white via-gold-100 to-gold-400 drop-shadow-[0_0_80px_rgba(245,197,24,0.4)]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-br from-white via-yellow-100 to-yellow-100 drop-shadow-[0_0_80px_rgba(245,197,24,0.4)]">
                 KRATU
               </span>
               <br />
-              <span className="text-[4vw] md:text-[3vw] lg:text-[2vw] text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-white to-gold-600 font-bold tracking-[0.2em] uppercase">
+              <span className="text-[4vw] md:text-[3vw] lg:text-[2vw] text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-white to-yellow-100 font-bold tracking-[0.2em] uppercase">
                 Hall of Residence
               </span>
             </motion.h1>
@@ -92,17 +92,17 @@ export default function Home() {
               transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-col sm:flex-row items-center gap-6"
             >
-              <Link href="/about" className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
-                <div className="relative flex items-center justify-center bg-gold-500 text-dark-950 font-bold px-10 py-4 rounded-full text-lg shadow-[0_0_40px_rgba(245,197,24,0.3)] hover:scale-105 transition-all duration-300">
-                  Enter The Legacy
-                </div>
+              <Link
+                href="/about"
+                className="inline-flex items-center justify-center bg-yellow-100 text-dark-950 font-bold px-10 py-4 rounded-full text-lg hover:scale-105 hover:bg-white transition-all duration-300 shadow-[0_0_30px_rgba(252,246,186,0.3)]"
+              >
+                Enter The Legacy
               </Link>
-              <Link href="/administration" className="group relative">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-gold-400/50 to-transparent rounded-full blur opacity-0 group-hover:opacity-50 transition duration-500"></div>
-                <div className="relative flex items-center justify-center border border-gold-400/30 bg-dark-900/50 backdrop-blur-md text-gold-400 font-semibold px-10 py-4 rounded-full text-lg hover:bg-gold-400/10 transition-all duration-300">
-                  Meet The Team
-                </div>
+              <Link
+                href="/administration"
+                className="inline-flex items-center justify-center border border-yellow-100/50 bg-dark-900/50 backdrop-blur-md text-yellow-100 font-bold px-10 py-4 rounded-full text-lg hover:border-yellow-100 hover:bg-yellow-100/10 transition-all duration-300"
+              >
+                Meet The Team
               </Link>
             </motion.div>
           </motion.div>
@@ -112,8 +112,8 @@ export default function Home() {
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50"
           >
-            <span className="text-xs tracking-widest text-gold-400 uppercase">Scroll</span>
-            <div className="w-[1px] h-16 bg-gradient-to-b from-gold-400 to-transparent" />
+            <span className="text-xs tracking-widest text-yellow-100 uppercase">Scroll</span>
+            <div className="w-[1px] h-16 bg-gradient-to-b from-yellow-100 to-transparent" />
           </motion.div>
         </section>
 
@@ -132,10 +132,10 @@ export default function Home() {
               <motion.div
                 key={stat.label}
                 whileHover={{ scale: 1.05, y: -10 }}
-                className="relative bg-dark-900/40 backdrop-blur-2xl border border-gold-400/10 rounded-3xl p-8 min-w-[200px] md:min-w-[250px] flex flex-col items-center justify-center shadow-2xl overflow-hidden group"
+                className="relative bg-dark-900/40 backdrop-blur-2xl border border-yellow-100/10 rounded-3xl p-8 min-w-[200px] md:min-w-[250px] flex flex-col items-center justify-center shadow-2xl overflow-hidden group"
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-gold-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <h3 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gold-400 mb-2 drop-shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-b from-yellow-100/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <h3 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-yellow-100 mb-2 drop-shadow-lg">
                   {stat.value}
                 </h3>
                 <p className="text-white/40 text-sm md:text-base font-medium tracking-[0.2em] uppercase">
@@ -157,21 +157,21 @@ export default function Home() {
               className="text-center mb-20"
             >
               <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-white">
-                Experience <span className="text-gold-400 italic font-serif">Kratu</span>
+                Experience <span className="text-yellow-100 italic font-serif">Kratu</span>
               </h2>
               <p className="text-xl text-white/50 max-w-2xl mx-auto">
                 A seamless blend of rigorous academic culture and vibrant student life, set within a state-of-the-art residential complex.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px] md:auto-rows-[400px]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-[350px] lg:auto-rows-[400px]">
               {/* Large Feature Card */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="md:col-span-2 relative rounded-3xl overflow-hidden group bg-dark-800 border border-white/5"
+                className="lg:col-span-2 relative rounded-3xl overflow-hidden group bg-dark-800 border border-white/5"
               >
                 <Image
                   src="/hostel-images/kratu-hall-front-gate.png"
@@ -181,7 +181,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-900/50 to-transparent" />
                 <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-10 flex flex-col justify-end">
-                  <div className="w-12 h-12 rounded-full border border-gold-400/30 flex items-center justify-center text-gold-400 mb-6 backdrop-blur-md">
+                  <div className="w-12 h-12 rounded-full border border-yellow-100/30 flex items-center justify-center text-yellow-100 mb-6 backdrop-blur-md">
                     ✦
                   </div>
                   <h3 className="text-3xl md:text-5xl font-bold text-white mb-4">Illuminated Legacy</h3>
@@ -269,10 +269,10 @@ export default function Home() {
 
         {/* ===== MASSIVE WARDEN QUOTE ===== */}
         <section className="relative py-32 px-4 md:px-8 overflow-hidden">
-          <div className="absolute inset-0 top-1/2 -translate-y-1/2 w-full h-[500px] bg-gold-400/5 blur-[100px] -z-10" />
+          <div className="absolute inset-0 top-1/2 -translate-y-1/2 w-full h-[500px] bg-yellow-100/5 blur-[100px] -z-10" />
           
           <div className="max-w-6xl mx-auto relative rounded-[3rem] p-10 md:p-20 overflow-hidden bg-gradient-to-br from-dark-800/80 to-dark-950/80 backdrop-blur-2xl border border-white/10 shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-gold-400/10 to-transparent rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3" />
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-yellow-100/10 to-transparent rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3" />
             
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -292,19 +292,19 @@ export default function Home() {
               </div>
 
               <div className="flex-1 text-center lg:text-left relative">
-                <span className="absolute -top-16 -left-10 text-[150px] font-serif text-white/5 leading-none select-none pointer-events-none">
+                <span className="absolute -top-10 -left-6 text-[100px] md:-top-16 md:-left-10 md:text-[150px] font-serif text-white/5 leading-none select-none pointer-events-none">
                   &ldquo;
                 </span>
-                <h3 className="text-3xl md:text-5xl font-light text-white leading-tight md:leading-snug mb-10 italic relative z-10">
-                  <span className="text-gold-400 font-medium">Kratu Hall</span> is more than just walls and rooms — it is a family. We nurture not just engineers, but leaders who carry the spirit of Sage Kratu.
+                <h3 className="text-2xl md:text-4xl lg:text-5xl font-light text-white leading-tight md:leading-snug mb-10 italic relative z-10">
+                  <span className="text-yellow-100 font-medium">Kratu Hall</span> is more than just walls and rooms — it is a family. We nurture not just engineers, but leaders who carry the spirit of Sage Kratu.
                 </h3>
                 
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-6 border-t border-white/10 pt-8">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-white/10 pt-8">
                   <div>
                     <h4 className="text-2xl font-bold text-white mb-1">Dr. Sanjib Kumar Nayak</h4>
-                    <p className="text-gold-400 tracking-widest uppercase text-sm font-semibold">Warden</p>
+                    <p className="text-yellow-100 tracking-widest uppercase text-sm font-semibold">Warden</p>
                   </div>
-                  <Link href="/administration" className="px-6 py-3 rounded-full border border-white/20 hover:border-gold-400 hover:text-gold-400 text-white/60 transition-all text-sm font-medium">
+                  <Link href="/administration" className="px-6 py-3 rounded-full border border-white/20 hover:border-yellow-100 hover:text-yellow-100 text-white/60 transition-all text-sm font-medium">
                     View Administration →
                   </Link>
                 </div>
@@ -325,11 +325,11 @@ export default function Home() {
             <h2 className="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-t from-white/20 via-white to-white mb-10 tracking-tight">
               Ready to Explore?
             </h2>
-            <Link href="/facilities" className="group relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-gold-400 to-gold-600 rounded-full blur-xl opacity-50 group-hover:opacity-100 transition duration-500"></div>
-              <div className="relative flex items-center justify-center bg-gold-500 text-dark-950 font-bold px-12 py-5 rounded-full text-xl shadow-2xl hover:scale-[1.03] transition-all duration-300">
-                Discover Facilities
-              </div>
+            <Link
+              href="/facilities"
+              className="inline-flex items-center justify-center bg-yellow-100 text-dark-950 font-bold px-12 py-5 rounded-full text-xl shadow-[0_0_40px_rgba(252,246,186,0.3)] hover:scale-105 hover:bg-white transition-all duration-300"
+            >
+              Discover Facilities
             </Link>
           </motion.div>
         </section>

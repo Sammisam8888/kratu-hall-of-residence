@@ -43,14 +43,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center font-heading font-bold text-dark-900 text-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-100 to-yellow-100 flex items-center justify-center font-heading font-bold text-dark-900 text-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
               K
             </div>
             <div>
               <span className="font-heading font-bold text-white text-lg tracking-wide">
                 KRATU
               </span>
-              <span className="hidden sm:block text-[10px] text-gold-400/70 tracking-[0.2em] uppercase -mt-1">
+              <span className="hidden sm:block text-[10px] text-yellow-100/70 tracking-[0.2em] uppercase -mt-1">
                 Hall of Residence
               </span>
             </div>
@@ -63,14 +63,14 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`nav-link ${
-                  pathname === link.href ? "!text-gold-400" : ""
+                  pathname === link.href ? "!text-yellow-100" : ""
                 }`}
               >
                 {link.label}
                 {pathname === link.href && (
                   <motion.div
                     layoutId="activeNav"
-                    className="absolute bottom-[-4px] left-0 right-0 h-[2px] bg-gold-400"
+                    className="absolute bottom-[-4px] left-0 right-0 h-[2px] bg-yellow-100"
                     transition={{ duration: 0.3 }}
                   />
                 )}
@@ -86,15 +86,15 @@ export default function Navbar() {
           >
             <motion.span
               animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-              className="w-6 h-0.5 bg-gold-400 block origin-center transition-all"
+              className="w-6 h-0.5 bg-yellow-100 block origin-center transition-all"
             />
             <motion.span
               animate={mobileOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
-              className="w-6 h-0.5 bg-gold-400 block"
+              className="w-6 h-0.5 bg-yellow-100 block"
             />
             <motion.span
               animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-              className="w-6 h-0.5 bg-gold-400 block origin-center transition-all"
+              className="w-6 h-0.5 bg-yellow-100 block origin-center transition-all"
             />
           </button>
         </div>
@@ -123,7 +123,7 @@ export default function Navbar() {
                     className={`text-2xl font-heading font-semibold transition-colors ${
                       pathname === link.href
                         ? "gradient-text"
-                        : "text-white/70 hover:text-gold-400"
+                        : "text-white/70 hover:text-yellow-100"
                     }`}
                   >
                     {link.label}

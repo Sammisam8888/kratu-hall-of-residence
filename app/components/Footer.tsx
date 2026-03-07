@@ -10,20 +10,20 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-dark-950 border-t border-gold-400/10">
+    <footer className="relative bg-dark-950 border-t border-yellow-100/10">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center font-heading font-bold text-dark-900 text-lg">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-100 to-yellow-100 flex items-center justify-center font-heading font-bold text-dark-900 text-lg">
                 K
               </div>
               <div>
                 <h3 className="font-heading font-bold text-white text-lg">
                   KRATU
                 </h3>
-                <p className="text-[10px] text-gold-400/70 tracking-[0.2em] uppercase -mt-0.5">
+                <p className="text-[10px] text-yellow-100/70 tracking-[0.2em] uppercase -mt-0.5">
                   Hall of Residence
                 </p>
               </div>
@@ -36,7 +36,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold text-gold-400 text-sm uppercase tracking-widest mb-4">
+            <h4 className="font-heading font-semibold text-yellow-100 text-sm uppercase tracking-widest mb-4">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -44,7 +44,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/50 hover:text-gold-400 transition-colors duration-300"
+                    className="text-sm text-white/50 hover:text-yellow-100 transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-heading font-semibold text-gold-400 text-sm uppercase tracking-widest mb-4">
+            <h4 className="font-heading font-semibold text-yellow-100 text-sm uppercase tracking-widest mb-4">
               Contact
             </h4>
             <div className="space-y-3 text-sm text-white/50">
@@ -68,7 +68,7 @@ export default function Footer() {
                 <span className="text-white/70">Email:</span>{" "}
                 <a
                   href="mailto:kratuhr@vssut.ac.in"
-                  className="text-gold-400/80 hover:text-gold-400 transition-colors"
+                  className="text-yellow-100/80 hover:text-yellow-100 transition-colors"
                 >
                   kratuhr@vssut.ac.in
                 </a>
@@ -77,7 +77,7 @@ export default function Footer() {
                 <span className="text-white/70">Warden:</span>{" "}
                 <a
                   href="tel:8249715656"
-                  className="text-gold-400/80 hover:text-gold-400 transition-colors"
+                  className="text-yellow-100/80 hover:text-yellow-100 transition-colors"
                 >
                   8249715656
                 </a>
@@ -87,7 +87,7 @@ export default function Footer() {
                   href="https://www.vssut.ac.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gold-400/80 hover:text-gold-400 transition-colors"
+                  className="text-yellow-100/80 hover:text-yellow-100 transition-colors"
                 >
                   www.vssut.ac.in
                 </a>

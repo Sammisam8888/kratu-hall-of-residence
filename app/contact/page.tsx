@@ -14,7 +14,7 @@ export default function ContactPage() {
         {/* ===== MASSIVE HEADER ===== */}
         <section className="relative min-h-[50vh] flex flex-col items-center justify-center pt-32 px-4 text-center">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-red-600/10 rounded-[100%] blur-[120px] -z-10 pointer-events-none" />
-          
+
           <motion.div style={{ y }} className="z-10 w-full max-w-5xl">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -28,7 +28,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="mt-6 text-xl md:text-3xl text-gold-400 font-serif italic max-w-2xl mx-auto"
+              className="mt-6 text-xl md:text-3xl text-yellow-100 font-serif italic max-w-2xl mx-auto"
             >
               Connect with the Kratu Administration
             </motion.p>
@@ -45,21 +45,21 @@ export default function ContactPage() {
               transition={{ duration: 0.8 }}
               className="glass-card p-12 relative overflow-hidden group"
             >
-              <div className="absolute -right-10 -bottom-10 text-[180px] opacity-[0.03] font-serif group-hover:scale-110 transition-transform duration-700 select-none text-gold-400">@</div>
+              <div className="absolute -right-10 -bottom-10 text-[180px] opacity-[0.03] font-serif group-hover:scale-110 transition-transform duration-700 select-none text-yellow-100">@</div>
               <h2 className="text-3xl font-black text-white mb-2">General Inquiry</h2>
-              <div className="w-12 h-1 bg-gold-400 mb-8" />
-              
+              <div className="w-12 h-1 bg-yellow-100 mb-8" />
+
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-gold-400 text-xs font-bold tracking-widest uppercase mb-1">Email Details</h4>
+                  <h4 className="text-yellow-100 text-xs font-bold tracking-widest uppercase mb-1">Email Details</h4>
                   <p className="text-2xl text-white font-medium">kratuhr@vssut.ac.in</p>
                 </div>
                 <div>
-                  <h4 className="text-gold-400 text-xs font-bold tracking-widest uppercase mb-1">Warden Contact</h4>
-                  <p className="text-2xl text-white font-medium">+91 82497 15656</p>
+                  <h4 className="text-yellow-100 text-xs font-bold tracking-widest uppercase mb-1">Contact Phone</h4>
+                  <p className="text-2xl text-white font-medium">+91 98612 16180</p>
                 </div>
                 <div>
-                  <h4 className="text-gold-400 text-xs font-bold tracking-widest uppercase mb-1">EPABX Extensions</h4>
+                  <h4 className="text-yellow-100 text-xs font-bold tracking-widest uppercase mb-1">EPABX Extensions</h4>
                   <p className="text-xl text-white/70 font-mono">VC: 2430211 | Security: 2112</p>
                 </div>
               </div>
@@ -72,17 +72,17 @@ export default function ContactPage() {
               transition={{ duration: 0.8 }}
               className="glass-card p-12 relative overflow-hidden"
             >
-               <h2 className="text-3xl font-black text-white mb-2">Location</h2>
-               <div className="w-12 h-1 bg-gold-400 mb-8" />
-               <p className="text-2xl text-white font-light pr-12 leading-relaxed mb-8">
-                 Kratu Hall of Residence,<br />
-                 VSSUT Campus, Burla,<br />
-                 Sambalpur, Odisha<br />
-                 PIN — 768018
-               </p>
-               <div className="inline-block px-6 py-3 rounded-full border border-white/20 bg-white/5 text-white shadow-xl backdrop-blur-md hover:bg-white/10 transition-colors cursor-none">
-                 View on Maps ↗
-               </div>
+              <h2 className="text-3xl font-black text-white mb-2">Location</h2>
+              <div className="w-12 h-1 bg-yellow-100 mb-8" />
+              <p className="text-2xl text-white font-light pr-12 leading-relaxed mb-8">
+                Kratu Hall of Residence,<br />
+                VSSUT Campus, Burla,<br />
+                Sambalpur, Odisha<br />
+                PIN — 768018
+              </p>
+              <div className="inline-block px-6 py-3 rounded-full border border-white/20 bg-white/5 text-white shadow-xl backdrop-blur-md hover:bg-white/10 transition-colors cursor-none">
+                View on Maps ↗
+              </div>
             </motion.div>
           </div>
         </section>
