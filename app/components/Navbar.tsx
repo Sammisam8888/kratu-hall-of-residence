@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -43,8 +44,8 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-100 to-yellow-100 flex items-center justify-center font-heading font-bold text-dark-900 text-lg transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-              K
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 relative overflow-hidden">
+              <Image src="/favicon.ico" alt="Kratu Logo" fill className="object-contain" />
             </div>
             <div>
               <span className="font-heading font-bold text-white text-lg tracking-wide">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   { href: "/about", label: "About & History" },
@@ -16,8 +17,8 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-100 to-yellow-100 flex items-center justify-center font-heading font-bold text-dark-900 text-lg">
-                K
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center relative overflow-hidden">
+                <Image src="/favicon.ico" alt="Kratu Logo" fill className="object-contain" />
               </div>
               <div>
                 <h3 className="font-heading font-bold text-white text-lg">
