@@ -77,7 +77,10 @@ export default function StudentCouncilPage() {
                   <h4 className="text-yellow-100 font-bold uppercase tracking-widest text-md mb-2">{sec.role}</h4>
                   <h3 className={`text-white font-black mb-2 ${i === 0 ? "text-5xl" : "text-3xl"}`}>{sec.name}</h3>
                   <p className="text-white/40 text-3xl mb-4 font-mono">{sec.branch}</p>
-                  <p className="inline-block px-4 py-2  border border-white/10 bg-white/5 text-white/70"><span className="text-yellow-100 font-bold text-xl uppercase tracking-widest mr-2">Tel</span>{sec.phone}</p>
+                  <p className="inline-block px-4 py-2  border border-white/10 bg-white/5 text-white/70">
+                    <span className="text-yellow-100 font-bold text-xl uppercase tracking-widest mr-2">Tel</span>
+                    <a href={`tel:${sec.phone}`} className="hover:text-yellow-100 hover:underline transition-all cursor-pointer">{sec.phone}</a>
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -111,7 +114,10 @@ export default function StudentCouncilPage() {
                 <div className="w-full text-yellow-100 font-bold uppercase text-[10px] tracking-widest mb-2 border-b border-white/10 pb-2">{c.wing}</div>
                 <h3 className="text-2xl font-black text-white mb-2 mt-2">{c.name}</h3>
                 <p className="text-white/40 text-xs font-mono mb-4">{c.branch}</p>
-                <p className="text-white/60 text-sm bg-dark-900 px-4 py-1  border border-white/5"><span className="text-yellow-100 font-bold text-[9px] uppercase tracking-widest mr-2">Tel</span>{c.phone}</p>
+                <p className="text-white/60 text-sm bg-dark-900 px-4 py-1  border border-white/5">
+                  <span className="text-yellow-100 font-bold text-[9px] uppercase tracking-widest mr-2">Tel</span>
+                  <a href={`tel:${c.phone}`} className="hover:text-yellow-100 hover:underline transition-all cursor-pointer">{c.phone}</a>
+                </p>
               </motion.div>
             ))}
           </div>
