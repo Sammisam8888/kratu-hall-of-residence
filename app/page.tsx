@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,6 +22,49 @@ export default function Home() {
 
   const statsY = useTransform(scrollYProgress, [0.1, 0.3], [100, 0]);
   const statsOpacity = useTransform(scrollYProgress, [0.1, 0.3], [0, 1]);
+
+  // --- Latest Update Logic ---
+  const [latestUpdate, setLatestUpdate] = useState<{
+    id: string; title: string; description: string; type: 'event' | 'announcement'; date: string; createdAt: string; link: string;
+  } | null>(null);
+
+  useEffect(() => {
+    async function fetchLatest() {
+      try {
+        const [resE, resA] = await Promise.all([
+           fetch("/api/events").then(r => r.json()),
+           fetch("/api/announcements").then(r => r.json())
+        ]);
+        
+        let newest = null;
+        let maxTime = 0;
+
+        if (resE.success && resE.events && resE.events.length > 0) {
+           const ev = resE.events[0]; // Already sorted newest first by API
+           const time = new Date(ev.createdAt).getTime();
+           if (time > maxTime) {
+              maxTime = time;
+              newest = { id: ev.id, title: ev.title, description: ev.description, type: 'event', date: ev.date, createdAt: ev.createdAt, link: `/events/${ev.id}` };
+           }
+        }
+        
+        if (resA.success && resA.announcements && resA.announcements.length > 0) {
+           const an = resA.announcements[0];
+           const time = new Date(an.createdAt).getTime();
+           if (time > maxTime) {
+              maxTime = time;
+              newest = { id: an.id, title: an.title, description: an.description, type: 'announcement', date: an.date, createdAt: an.createdAt, link: `/announcements` };
+           }
+        }
+        
+        // @ts-ignore
+        setLatestUpdate(newest);
+      } catch (err) {
+        console.error("Failed to fetch latest updates", err);
+      }
+    }
+    fetchLatest();
+  }, []);
 
   return (
     <PageTransition>
@@ -116,6 +159,39 @@ export default function Home() {
             <div className="w-[1px] h-16 bg-gradient-to-b from-yellow-100 to-transparent" />
           </motion.div>
         </section>
+
+        {/* ===== LATEST UPDATE BRIDGE CARD ===== */}
+        {latestUpdate && (
+          <section className="container-page mt-[-100px] mb-20 z-30 relative px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-5xl mx-auto glass-card border border-yellow-100/30 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden"
+            >
+              <div className={`p-1 flex text-xs font-bold uppercase tracking-widest justify-center ${latestUpdate.type === 'event' ? 'bg-yellow-100 text-dark-950' : 'bg-blue-400 text-dark-950'}`}>
+                 Latest {latestUpdate.type === 'event' ? 'Event Activity' : 'Official Notice'}
+              </div>
+              <div className="p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 bg-gradient-to-br from-dark-900 via-dark-900 to-dark-950">
+                <div className="flex-1 text-center md:text-left">
+                   <div className="text-white/50 text-sm font-bold uppercase tracking-widest mb-2">{latestUpdate.date}</div>
+                   <h3 className="text-3xl md:text-4xl font-black text-white mb-4 line-clamp-2 leading-tight">
+                     {latestUpdate.title}
+                   </h3>
+                   <p className="text-white/70 font-light line-clamp-2 md:line-clamp-3 mb-0">
+                     {latestUpdate.description}
+                   </p>
+                </div>
+                <div className="shrink-0 flex items-center justify-center w-full md:w-auto mt-4 md:mt-0">
+                   <Link href={latestUpdate.link} className={`px-8 py-4 font-bold uppercase tracking-widest transition-colors ${latestUpdate.type === 'event' ? 'border border-yellow-100/50 hover:bg-yellow-100/10 text-yellow-100' : 'border border-blue-400/50 hover:bg-blue-400/10 text-blue-300'}`}>
+                      {latestUpdate.type === 'event' ? 'View Event' : 'Read Notice'} →
+                   </Link>
+                </div>
+              </div>
+            </motion.div>
+          </section>
+        )}
 
         {/* ===== FLOATING STATS ===== */}
         <section className="relative section-spacing container-page z-20 flex justify-center">

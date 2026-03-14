@@ -17,7 +17,7 @@ const councilors = [
   { role: "Councilor", wing: "Ground floor West Wing", name: "Abhijit Rath", branch: "CSE, 3rd Yr", phone: "8249870125", img: "/student-council-images/abhijit-rath-councilor.jpg" },
   { role: "Councilor", wing: "Ground floor West Wing", name: "Debiprasad Sahoo", branch: "Mech, 3rd Yr", phone: "8249870125", img: "/student-council-images/debiprasad-sahoo-councilor.png" },
   { role: "Councilor", wing: "First floor East Wing", name: "Sangram Keshari Choudhury", branch: "Mech, 3rd Yr", phone: "7894236353", img: "/student-council-images/sangram-keshari-choudhury-councilor.jpg" },
-  { role: "Councilor", wing: "First Floor East Wing", name: "Shreyas Dash", branch: "Civil, 3rd Yr", phone: "9439617267", img: "/student-council-images/shreyas-dash-councilor.png" },
+  { role: "Councilor", wing: "First Floor East Wing", name: "Shreyas Dash", branch: "Civil, 3rd Yr", phone: "7205843692", img: "/student-council-images/shreyas-dash-councilor.png" },
   { role: "Councilor", wing: "Second Floor West Wing", name: "Mrutyunjay Sahoo", branch: "Mech, 3rd Yr", phone: "7815049386", img: "/student-council-images/mrutyunjay-sahoo-councilor.jpg" },
   { role: "Councilor", wing: "Second Floor East Wing", name: "Suvam Dora", branch: "Civil, 3rd Yr", phone: "9348123610", img: "/student-council-images/suvam-dora-councilor.jpg" },
 ];

@@ -11,6 +11,8 @@ const navLinks = [
   { href: "/administration", label: "Administration" },
   { href: "/student-council", label: "Student Council" },
   { href: "/facilities", label: "Facilities" },
+  { href: "/events", label: "Events" },
+  { href: "/announcements", label: "Announcements" },
   { href: "/contact", label: "Contact" },
 ];
 
