@@ -17,6 +17,26 @@ export const metadata: Metadata = {
     "Engineering Hostel",
     "Odisha",
   ],
+  openGraph: {
+    title: "Kratu Hall of Residence | VSSUT Burla",
+    description: "Official website of Kratu Hall of Residence at Veer Surendra Sai University of Technology, Burla. Home to 254 boarders, part of the legendary Saptarishi tradition since 1956.",
+    images: [
+      {
+        url: "/hostel-images/opengraph.png",
+        width: 1200,
+        height: 630,
+        alt: "Kratu Hall of Residence - VSSUT Burla",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kratu Hall of Residence | VSSUT Burla",
+    description: "Official website of Kratu Hall of Residence at Veer Surendra Sai University of Technology, Burla.",
+    images: ["/hostel-images/opengraph.png"],
+  },
 };
 
 export default function RootLayout({
