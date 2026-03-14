@@ -9,12 +9,19 @@ export const metadata: Metadata = {
   description:
     "Official website of Kratu Hall of Residence at Veer Surendra Sai University of Technology, Burla. Home to 254 boarders, part of the legendary Saptarishi tradition since 1956.",
   keywords: [
+    "Kratu Hall of Residence",
     "Kratu Hall",
-    "VSSUT",
-    "Burla",
-    "Hall of Residence",
-    "Saptarishi",
+    "VSSUT Burla",
+    "Veer Surendra Sai University of Technology",
+    "UCE Burla",
+    "Sambalpur University",
     "Engineering Hostel",
+    "Boys Hostel VSSUT",
+    "B.Tech Hostel Odisha",
+    "Saptarishi Tradition",
+    "SEARCH Cluster Sambalpur",
+    "VSSUT Accommodation",
+    "Best Engineering Hostel in Odisha",
     "Odisha",
   ],
   openGraph: {

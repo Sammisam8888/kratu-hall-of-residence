@@ -85,8 +85,8 @@ export default function ContactPage() {
               </div>
             </motion.div>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
 
           <motion.div className="glass-card p-12 mt-8">
             <h2 className="text-3xl font-black text-white mb-6">
