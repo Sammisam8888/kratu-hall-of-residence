@@ -11,13 +11,13 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-dark-950 border-t border-yellow-100/10">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+    <footer className="relative bg-dark-950 border-t border-yellow-100/10 mt-32 w-full flex justify-center">
+      <div className="w-full max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center relative overflow-hidden">
+              <div className="w-10 h-10  flex items-center justify-center relative overflow-hidden">
                 <Image src="/favicon.ico" alt="Kratu Logo" fill className="object-contain" />
               </div>
               <div>

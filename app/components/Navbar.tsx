@@ -35,16 +35,16 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 w-full flex justify-center ${
           scrolled
             ? "glass py-3"
             : "bg-transparent py-5"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div className="w-full max-w-7xl px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 relative overflow-hidden">
+            <div className="w-10 h-10  flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3 relative overflow-hidden">
               <Image src="/favicon.ico" alt="Kratu Logo" fill className="object-contain" />
             </div>
             <div>
