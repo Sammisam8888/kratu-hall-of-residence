@@ -102,7 +102,7 @@ export default function AdministrationPage() {
                 {/* Image Section */}
                 <div className={`relative bg-dark-900 overflow-hidden shrink-0 border-b md:border-b-0 md:border-r border-white/5 ${i === 0 ? "w-full md:w-1/3 aspect-[4/3] md:aspect-[3/4] lg:aspect-auto lg:h-[450px]" : "w-full aspect-[3/4]"
                   }`}>
-                  {profile.placeholder ? (
+                  {(profile as any).placeholder ? (
                     <div className="w-full h-full flex flex-col items-center justify-center text-white/20">
                       <span className="text-4xl mb-4">👤</span>
                       <span className="font-bold tracking-widest uppercase text-xs">No Image</span>

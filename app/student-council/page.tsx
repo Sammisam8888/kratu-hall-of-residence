@@ -66,7 +66,7 @@ export default function StudentCouncilPage() {
                 <div className={`absolute inset-0 bg-gradient-to-br ${sec.bg} to-transparent opacity-20 group-hover:opacity-40 transition-opacity duration-500`} />
                 
                 <div className={`relative ${i === 0 ? "w-full md:w-1/3 h-64 md:h-80" : "w-full aspect-square"} 2xl overflow-hidden mb-6 ${i===0 && "md:mb-0"} object-cover border border-white/10`}>
-                  {sec.ph ? (
+                  {(sec as any).ph ? (
                     <div className="w-full h-full bg-dark-800 flex items-center justify-center font-bold tracking-widest text-[10px] text-white/30 uppercase text-center p-4">No Image</div>
                   ) : (
                     <Image src={sec.img} alt={sec.name} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -102,7 +102,7 @@ export default function StudentCouncilPage() {
                 className="glass-card p-8 flex flex-col items-center text-center group"
               >
                 <div className="w-24 h-24  overflow-hidden border-2 border-yellow-100/30 mb-6 relative">
-                  {c.ph ? (
+                  {(c as any).ph ? (
                     <div className="w-full h-full bg-dark-800 flex items-center justify-center font-bold tracking-widest text-[8px] text-white/30 uppercase text-center p-2 leading-tight">No Image</div>
                   ) : (
                     <Image src={c.img!} alt={c.name} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
